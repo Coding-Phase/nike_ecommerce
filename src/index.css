@@ -55,4 +55,19 @@
 	.info-text {
 		@apply font-montserrat text-slate-gray text-lg leading-7;
 	}
+
+	.facebook {
+		filter: invert(46%) sepia(48%) saturate(6780%) hue-rotate(201deg)
+			brightness(97%) contrast(96%);
+	}
+
+	.instagram {
+		filter: invert(34%) sepia(70%) saturate(1360%) hue-rotate(316deg)
+			brightness(92%) contrast(94%);
+	}
+
+	.twitter {
+		filter: invert(63%) sepia(59%) saturate(5271%) hue-rotate(177deg)
+			brightness(101%) contrast(90%);
+	}
 }

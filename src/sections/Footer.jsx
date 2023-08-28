@@ -15,11 +15,26 @@ function Footer() {
 					</p>
 					<div className="flex items-center gap-5 mt-8">
 						{socialMedia?.map((icon) => (
-							<div
-								key={icon?.alt}
-								className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-								<img src={icon?.src} alt={icon?.alt} width={24} height={24} />
-							</div>
+							<a href={icon?.link} key={icon?.alt}>
+								<div className="group flex justify-center items-center w-12 h-12 bg-white rounded-full">
+									<img
+										src={icon?.src}
+										alt={icon?.alt}
+										width={24}
+										height={24}
+										className={`
+									${
+										icon?.alt === "facebook"
+											? "group-hover:facebook"
+											: icon?.alt === "twitter"
+											? "group-hover:twitter"
+											: "group-hover:instagram"
+									}
+									transition-all duration-300
+								`}
+									/>
+								</div>
+							</a>
 						))}
 					</div>
 				</div>
