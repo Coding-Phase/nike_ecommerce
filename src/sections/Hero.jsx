@@ -27,7 +27,11 @@ function Hero() {
 					Discover stylish Nike arrivals, quality comfort, and innovation for
 					your active life.
 				</p>
-				<Button label="Shop now" iconUrl={arrowRight} />
+				<Button
+					label="Shop now"
+					iconUrl={arrowRight}
+					link="https://www.youtube.com/watch?v=tS7upsfuxmo&t=7080s"
+				/>
 
 				<div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
 					{statistics?.map((stat) => (
