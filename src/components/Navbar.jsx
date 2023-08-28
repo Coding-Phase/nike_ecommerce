@@ -64,7 +64,7 @@ function SideNavbar({ showMenu, toggleMenu }) {
 												: icon?.alt === "twitter"
 												? "twitter"
 												: "instagram"
-										}transition-all duration-300`}
+										} transition-all duration-300`}
 									/>
 								</div>
 							</a>
